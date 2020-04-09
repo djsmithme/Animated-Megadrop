@@ -1,0 +1,279 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04-Mar-2014, 16:18:40
+    Author     : dansmith
+*/
+/* line 27, ../sass/Megadropdown.scss */
+.nav {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  background: #333333;
+  height: 63px;
+}
+/* line 38, ../sass/Megadropdown.scss */
+.nav.shadow {
+  -webkit-box-shadow: inset 0 0 12px 0 black;
+  box-shadow: inset 0 0 12px 0 black;
+}
+/* line 44, ../sass/Megadropdown.scss */
+.nav li {
+  list-style: none;
+}
+/* line 46, ../sass/Megadropdown.scss */
+.nav li.nav-right {
+  float: right;
+}
+/* line 50, ../sass/Megadropdown.scss */
+.nav > li {
+  padding: 0;
+  float: left;
+  position: relative;
+}
+/* line 52, ../sass/Megadropdown.scss */
+.nav > li > a {
+  float: left;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 63px;
+  padding: 0 14px;
+  margin-right: 1px;
+  height: 63px;
+  text-shadow: -1px 1px 0 black;
+}
+/* line 64, ../sass/Megadropdown.scss */
+.nav > li > a:last-of-type {
+  margin-right: 0;
+}
+/* line 68, ../sass/Megadropdown.scss */
+.nav > li > div {
+  position: absolute;
+  left: 0;
+  top: 63px;
+  display: none;
+  background: white;
+  padding: 10px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 99999;
+}
+/* line 79, ../sass/Megadropdown.scss */
+.nav > li > div ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 82, ../sass/Megadropdown.scss */
+.nav > li > div ul li a {
+  background: #E74C3C;
+  color: #FFF;
+  text-decoration: none;
+  padding: 9px 12px;
+  margin-bottom: 2px;
+  margin-right: 2px;
+  display: block;
+}
+/* line 93, ../sass/Megadropdown.scss */
+.nav > li > div ul li a:hover {
+  background: #FFF;
+  color: #111;
+}
+/* line 102, ../sass/Megadropdown.scss */
+.nav > li > div p {
+  color: #666;
+}
+/* line 103, ../sass/Megadropdown.scss */
+.nav > li > div .right {
+  right: 0;
+  left: auto;
+}
+/* line 108, ../sass/Megadropdown.scss */
+.nav > li:hover > a {
+  background: white;
+  color: black;
+  text-shadow: -1px 1px 0 #FFFFFF;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y4ZjhmOCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f8f8), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#f8f8f8, #ffffff);
+  background-image: -moz-linear-gradient(#f8f8f8, #ffffff);
+  background-image: -o-linear-gradient(#f8f8f8, #ffffff);
+  background-image: linear-gradient(#f8f8f8, #ffffff);
+  -webkit-box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, 0.2);
+}
+/* line 125, ../sass/Megadropdown.scss */
+.nav > li:first-child > a {
+  border-left: 0;
+}
+/* line 128, ../sass/Megadropdown.scss */
+.nav > li:last-child > a {
+  border-right: 0;
+}
+
+/* line 138, ../sass/Megadropdown.scss */
+.nav.nojs > li:hover > a {
+  background: #f8f8f8;
+  color: #222;
+  text-shadow: -1px 1px 0 #FFFFFF;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y4ZjhmOCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f8f8), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(#f8f8f8, #ffffff);
+  background-image: -moz-linear-gradient(#f8f8f8, #ffffff);
+  background-image: -o-linear-gradient(#f8f8f8, #ffffff);
+  background-image: linear-gradient(#f8f8f8, #ffffff);
+  -webkit-box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -1px 8px 0 rgba(0, 0, 0, 0.2);
+}
+/* line 154, ../sass/Megadropdown.scss */
+.nav.nojs > li:hover div[class^="container-"] {
+  display: block !important;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* line 163, ../sass/Megadropdown.scss */
+.navvisfix {
+  visibility: visible !important;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* MEGA DROP DOWN */
+/* line 172, ../sass/Megadropdown.scss */
+.container-1 {
+  width: 160px;
+}
+/* line 179, ../sass/Megadropdown.scss */
+.container-1 .col1 {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+}
+
+/* line 172, ../sass/Megadropdown.scss */
+.container-2 {
+  width: 320px;
+}
+/* line 179, ../sass/Megadropdown.scss */
+.container-2 .col1 {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 50%;
+}
+/* line 179, ../sass/Megadropdown.scss */
+.container-2 .col2 {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+}
+
+/* line 172, ../sass/Megadropdown.scss */
+.container-3 {
+  width: 480px;
+}
+/* line 179, ../sass/Megadropdown.scss */
+.container-3 .col1 {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 33.33333%;
+}
+/* line 179, ../sass/Megadropdown.scss */
+.container-3 .col2 {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 66.66667%;
+}
+/* line 179, ../sass/Megadropdown.scss */
+.container-3 .col3 {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+}
+
+/* line 172, ../sass/Megadropdown.scss */
+.container-4 {
+  width: 640px;
+}
+/* line 179, ../sass/Megadropdown.scss */
+.container-4 .col1 {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 25%;
+}
+/* line 179, ../sass/Megadropdown.scss */
+.container-4 .col2 {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 50%;
+}
+/* line 179, ../sass/Megadropdown.scss */
+.container-4 .col3 {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 75%;
+}
+/* line 179, ../sass/Megadropdown.scss */
+.container-4 .col4 {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+}
+
+/* line 172, ../sass/Megadropdown.scss */
+.container-5 {
+  width: 800px;
+}
+/* line 179, ../sass/Megadropdown.scss */
+.container-5 .col1 {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 20%;
+}
+/* line 179, ../sass/Megadropdown.scss */
+.container-5 .col2 {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 40%;
+}
+/* line 179, ../sass/Megadropdown.scss */
+.container-5 .col3 {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 60%;
+}
+/* line 179, ../sass/Megadropdown.scss */
+.container-5 .col4 {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 80%;
+}
+/* line 179, ../sass/Megadropdown.scss */
+.container-5 .col5 {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 100%;
+}
